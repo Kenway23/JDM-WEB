@@ -1,8 +1,9 @@
 <?php
-$host = "localhost";
-$dbname = "garasi_muda";
+$host = "caboose.proxy.rlwy.net";
+$dbname = "railway";
 $username = "root";
-$password = "";
+$password = "PumgOfCCwdYatVhUBhgNRryjmKnmTLcx";
+$port = "11878";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
