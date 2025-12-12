@@ -1,0 +1,676 @@
+/* ===== IMPORT FONT ===== */
+/* Import font Orbitron (futuristik) & Poppins (rapi) dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap');
+
+/* ===== STYLE LOGIN ADMIN ===== */
+/* Atur background, font, dan warna teks default */
+body {
+    /* warna background umum untuk seluruh halaman */
+    background: #f5f5f5;
+    /* font default untuk seluruh teks */
+    font-family: 'Poppins', sans-serif;
+    /* warna teks default */
+    color: #333;
+    /* hapus margin default browser */
+    margin: 0;
+    /* hapus padding default browser */
+    padding: 0;
+}
+
+/* ===== LOGIN CONTAINER ===== */
+/* Kotak form login putih di tengah layar */
+.login-container {
+    /* warna background kotak login */
+    background: #ffffff;
+    /* sudut kotak bulat */
+    border-radius: 12px;
+    /* jarak di dalam kotak (padding) */
+    padding: 40px;
+    /* lebar kotak */
+    width: 350px;
+    /* posisi tengah layar horizontal & vertical margin atas */
+    margin: 100px auto;
+    /* bayangan lembut di sekitar kotak */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* teks di dalam kotak rata tengah */
+    text-align: center;
+}
+
+/* Header di dalam login form */
+.login-container h2 {
+    /* warna teks oranye */
+    color: #ff4500;
+    /* font futuristik Orbitron */
+    font-family: 'Orbitron', sans-serif;
+    /* jarak bawah header */
+    margin-bottom: 20px;
+    /* huruf kapital semua */
+    text-transform: uppercase;
+}
+
+/* Input field login */
+.login-container input {
+    /* lebar input penuh sesuai container */
+    width: 100%;
+    /* jarak vertikal antar input */
+    margin: 10px 0;
+    /* jarak dalam input (padding) */
+    padding: 12px;
+    /* border tipis abu-abu */
+    border: 1px solid #ccc;
+    /* sudut input bulat */
+    border-radius: 6px;
+    /* ukuran font */
+    font-size: 1rem;
+    /* animasi halus saat perubahan */
+    transition: 0.3s;
+}
+
+/* Efek saat input fokus */
+.login-container input:focus {
+    /* ubah warna border saat fokus */
+    border-color: #ff4500;
+    /* bayangan glow oranye */
+    box-shadow: 0 0 6px rgba(255, 69, 0, 0.5);
+    /* hilangkan outline default browser */
+    outline: none;
+}
+
+/* Tombol login */
+.login-container button {
+    /* lebar tombol penuh */
+    width: 100%;
+    /* background oranye */
+    background: #ff4500;
+    /* hilangkan border default */
+    border: none;
+    /* padding dalam tombol */
+    padding: 12px;
+    /* warna teks putih */
+    color: white;
+    /* font tebal */
+    font-weight: bold;
+    /* sudut tombol bulat */
+    border-radius: 6px;
+    /* cursor pointer saat hover */
+    cursor: pointer;
+    /* animasi halus */
+    transition: 0.3s;
+    /* jarak atas tombol */
+    margin-top: 10px;
+}
+
+/* Hover tombol login */
+.login-container button:hover {
+    /* warna background lebih terang saat hover */
+    background: #ff6a00;
+    /* glow saat hover */
+    box-shadow: 0 0 8px #ff6a00;
+}
+
+/* Pesan error login */
+.error {
+    /* warna teks merah */
+    color: red;
+    /* font tebal */
+    font-weight: 600;
+    /* jarak bawah */
+    margin-bottom: 10px;
+}
+
+/* Footer login */
+footer {
+    /* teks rata tengah */
+    text-align: center;
+    /* warna abu lembut */
+    color: #999;
+    /* ukuran font lebih kecil */
+    font-size: 0.9rem;
+    /* jarak atas */
+    margin-top: 40px;
+}
+
+/* ===== DASHBOARD ADMIN ===== */
+/* Header dashboard */
+.admin-header {
+    /* background oranye */
+    background: #ff4500;
+    /* teks putih */
+    color: white;
+    /* padding di dalam header */
+    padding: 15px 30px;
+    /* gunakan flexbox untuk layout */
+    display: flex;
+    /* spasi antara judul & navbar */
+    justify-content: space-between;
+    /* rata tengah secara vertikal */
+    align-items: center;
+}
+
+/* Judul dashboard */
+.admin-header h1 {
+    /* font Orbitron futuristik */
+    font-family: 'Orbitron', sans-serif;
+    /* ukuran font */
+    font-size: 1.5rem;
+}
+
+/* Navbar dashboard */
+.nav-links a {
+    /* warna teks putih */
+    color: white;
+    /* hilangkan garis bawah */
+    text-decoration: none;
+    /* jarak kiri antar link */
+    margin-left: 10px;
+    /* background semi transparan */
+    background: rgba(255, 255, 255, 0.2);
+    /* padding link */
+    padding: 8px 12px;
+    /* sudut bulat */
+    border-radius: 6px;
+    /* animasi halus */
+    transition: 0.3s;
+}
+
+/* Hover link navbar */
+.nav-links a:hover {
+    /* background lebih terang saat hover */
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Link aktif */
+.nav-links a.active {
+    /* background putih */
+    background: white;
+    /* teks oranye */
+    color: #ff4500;
+    /* font tebal */
+    font-weight: 600;
+}
+
+/* Section konten dashboard */
+.admin-section {
+    /* jarak isi dari tepi */
+    padding: 40px;
+}
+
+/* Judul section dashboard */
+.admin-section h2 {
+    /* warna oranye */
+    color: #ff4500;
+    /* font Orbitron */
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Form di dashboard */
+.admin-section form {
+    /* background putih */
+    background: #fff;
+    /* padding di dalam form */
+    padding: 20px;
+    /* sudut bulat */
+    border-radius: 8px;
+    /* bayangan lembut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* lebar form */
+    width: 400px;
+    /* jarak bawah antar form */
+    margin-bottom: 40px;
+}
+
+/* Input & textarea di dashboard */
+.admin-section input,
+.admin-section textarea {
+    /* lebar penuh */
+    width: 100%;
+    /* jarak vertikal */
+    margin: 8px 0;
+    /* padding di dalam input */
+    padding: 10px;
+    /* border abu */
+    border: 1px solid #ccc;
+    /* sudut bulat */
+    border-radius: 6px;
+    /* ukuran font */
+    font-size: 1rem;
+}
+
+/* Tombol submit dashboard */
+.admin-section button {
+    /* background oranye */
+    background: #ff4500;
+    /* hilangkan border default */
+    border: none;
+    /* padding tombol */
+    padding: 10px 15px;
+    /* teks putih */
+    color: white;
+    /* sudut bulat */
+    border-radius: 6px;
+    /* cursor pointer */
+    cursor: pointer;
+    /* animasi halus */
+    transition: 0.3s;
+}
+
+/* Hover tombol submit */
+.admin-section button:hover {
+    /* background lebih terang saat hover */
+    background: #ff6a00;
+}
+
+/* ===== CARD LIST MOBIL ===== */
+/* Container card mobil */
+.car-list {
+    /* gunakan flexbox */
+    display: flex;
+    /* pindah baris jika penuh */
+    flex-wrap: wrap;
+    /* jarak antar card */
+    gap: 20px;
+}
+
+/* Card mobil */
+.car-card {
+    /* background putih */
+    background: #fff;
+    /* sudut bulat */
+    border-radius: 8px;
+    /* bayangan lembut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* lebar card */
+    width: 250px;
+    /* teks rata tengah */
+    text-align: center;
+    /* padding dalam card */
+    padding: 15px;
+    /* animasi saat hover */
+    transition: 0.3s ease;
+}
+
+/* Hover card mobil */
+.car-card:hover {
+    /* geser sedikit ke atas */
+    transform: translateY(-3px);
+    /* bayangan lebih tebal */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar mobil kotak seragam */
+.car-card img {
+    /* lebar penuh sesuai card */
+    width: 100%;
+    /* bentuk kotak */
+    aspect-ratio: 1 / 1;
+    /* isi proporsional */
+    object-fit: cover;
+    /* sudut bulat */
+    border-radius: 10px;
+    /* jarak bawah */
+    margin-bottom: 10px;
+    /* bayangan lembut */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    /* background saat gambar belum load */
+    background-color: #f9f9f9;
+    /* animasi transform dan shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover gambar mobil */
+.car-card img:hover {
+    /* zoom gambar */
+    transform: scale(1.05);
+    /* bayangan oranye */
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+}
+
+/* ===== TOMBOL EDIT / HAPUS ===== */
+/* Container tombol edit & hapus */
+.card-actions {
+    /* jarak atas dari konten card */
+    margin-top: 10px;
+    /* gunakan flexbox */
+    display: flex;
+    /* rata tengah */
+    justify-content: center;
+    /* jarak antar tombol */
+    gap: 10px;
+}
+
+/* Tombol edit */
+.btn-edit {
+    /* padding tombol */
+    padding: 6px 12px;
+    /* sudut bulat */
+    border-radius: 6px;
+    /* hilangkan garis bawah */
+    text-decoration: none;
+    /* font tebal */
+    font-weight: 600;
+    /* animasi halus */
+    transition: 0.3s;
+    /* font Poppins */
+    font-family: 'Poppins', sans-serif;
+    /* background biru */
+    background: #007bff;
+    /* teks putih */
+    color: white;
+}
+
+/* Hover tombol edit */
+.btn-edit:hover {
+    /* background lebih gelap saat hover */
+    background: #0056b3;
+}
+
+/* Tombol hapus */
+.btn-delete {
+    /* padding tombol */
+    padding: 6px 12px;
+    /* sudut bulat */
+    border-radius: 6px;
+    /* hilangkan garis bawah */
+    text-decoration: none;
+    /* font tebal */
+    font-weight: 600;
+    /* animasi halus */
+    transition: 0.3s;
+    /* font Poppins */
+    font-family: 'Poppins', sans-serif;
+    /* background merah */
+    background: #dc3545;
+    /* teks putih */
+    color: white;
+}
+
+/* Hover tombol hapus */
+.btn-delete:hover {
+    /* background lebih gelap saat hover */
+    background: #b02a37;
+}
+
+/* ===== FOOTER ADMIN ===== */
+/* Footer bawah halaman */
+footer {
+    /* teks rata tengah */
+    text-align: center;
+    /* warna abu */
+    color: #888;
+    /* ukuran font kecil */
+    font-size: 0.9rem;
+    /* padding atas-bawah */
+    padding: 15px 0;
+    /* background abu muda */
+    background: #f9f9f9;
+    /* jarak atas */
+    margin-top: 50px;
+    /* border atas tipis */
+    border-top: 1px solid #eee;
+}
+
+/* ===== GALERI ADMIN ===== */
+/* Container galeri */
+.gallery-list {
+    /* pakai flexbox */
+    display: flex;
+    /* pindah baris jika penuh */
+    flex-wrap: wrap;
+    /* jarak antar card */
+    gap: 20px;
+    /* rata tengah */
+    justify-content: center;
+}
+
+/* Card galeri */
+.gallery-card {
+    /* background putih */
+    background: #fff;
+    /* sudut bulat */
+    border-radius: 8px;
+    /* bayangan lembut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* lebar card */
+    width: 250px;
+    /* teks rata tengah */
+    text-align: center;
+    /* padding */
+    padding: 10px;
+    /* animasi */
+    transition: 0.3s;
+}
+
+/* Hover card galeri */
+.gallery-card:hover {
+    /* geser ke atas */
+    transform: translateY(-5px);
+    /* bayangan oranye */
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.4);
+}
+
+/* Gambar galeri */
+.gallery-card img {
+    /* lebar penuh */
+    width: 100%;
+    /* buat kotak */
+    aspect-ratio: 1 / 1;
+    /* isi proporsional */
+    object-fit: cover;
+    /* sudut bulat */
+    border-radius: 10px;
+    /* bayangan oranye lembut */
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
+    /* background saat belum load */
+    background-color: #f9f9f9;
+    /* animasi */
+    transition: 0.3s;
+}
+
+/* Hover gambar galeri */
+.gallery-card img:hover {
+    /* zoom */
+    transform: scale(1.05);
+    /* bayangan oranye lebih besar */
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.5);
+}
+
+/* ===== PESAN PENGUNJUNG (ADMIN CONTACT) ===== */
+/* Container list pesan */
+.message-list {
+    /* pakai flexbox vertikal */
+    display: flex;
+    /* arah kolom */
+    flex-direction: column;
+    /* jarak antar pesan */
+    gap: 15px;
+}
+
+/* Card pesan */
+.message-card {
+    /* background putih */
+    background: #fff;
+    /* sudut bulat */
+    border-radius: 8px;
+    /* padding */
+    padding: 15px;
+    /* bayangan lembut */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    /* warna teks */
+    color: #333;
+    /* animasi hover */
+    transition: 0.3s;
+}
+
+/* Hover card pesan */
+.message-card:hover {
+    /* geser ke atas */
+    transform: translateY(-3px);
+    /* bayangan oranye */
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.3);
+}
+
+/* Judul pesan */
+.message-card h3 {
+    /* warna oranye */
+    color: #ff4500;
+    /* jarak bawah */
+    margin-bottom: 5px;
+}
+
+/* Teks pesan */
+.message-card p {
+    /* jarak bawah */
+    margin-bottom: 5px;
+}
+
+/* Tombol hapus pesan */
+.message-card .btn-delete {
+    /* tampil inline */
+    display: inline-block;
+    /* background merah */
+    background: #dc3545;
+    /* teks putih */
+    color: #fff;
+    /* padding */
+    padding: 6px 12px;
+    /* sudut bulat */
+    border-radius: 6px;
+    /* hilangkan garis bawah */
+    text-decoration: none;
+    /* font tebal */
+    font-weight: bold;
+    /* animasi */
+    transition: 0.3s;
+}
+
+/* Hover tombol hapus pesan */
+.message-card .btn-delete:hover {
+    /* background lebih gelap */
+    background: #b02a37;
+}
+
+/* Modal Background Terang */
+.modal {
+    /* awalnya disembunyikan */
+    display: none;
+    /* posisi tetap */
+    position: fixed;
+    /* urutan di atas */
+    z-index: 1000;
+    /* posisi di kiri atas */
+    left: 0;
+    top: 0;
+    /* penuh layar */
+    width: 100%;
+    height: 100%;
+    /* background transparan terang */
+    background: rgba(255, 255, 255, 0.2);
+    /* blur background */
+    backdrop-filter: blur(10px);
+    /* atur konten tengah horizontal & vertical */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content Terang */
+.modal-content {
+    /* background putih transparan */
+    background: rgba(255, 255, 255, 0.9);
+    /* teks gelap */
+    color: #333;
+    /* sudut bulat */
+    border-radius: 15px;
+    /* padding dalam modal */
+    padding: 30px;
+    /* teks rata tengah */
+    text-align: center;
+    /* lebar modal */
+    width: 400px;
+    /* maksimum lebar */
+    max-width: 90%;
+    /* bayangan lembut */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* animasi fadeIn */
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Semua tombol modal */
+.modal-actions .btn {
+    /* padding tombol */
+    padding: 12px 25px;
+    /* ukuran font */
+    font-size: 16px;
+    /* line height */
+    line-height: 1.2;
+    /* tampil inline */
+    display: inline-block;
+    /* hilangkan garis bawah */
+    text-decoration: none;
+    /* sudut bulat */
+    border-radius: 12px;
+    /* font tebal */
+    font-weight: 600;
+    /* animasi halus */
+    transition: all 0.3s ease;
+    /* box-sizing */
+    box-sizing: border-box;
+}
+
+/* Tombol Batal */
+.btn-cancel {
+    /* gradient abu-abu */
+    background: linear-gradient(135deg, #bbb, #999);
+    /* teks gelap */
+    color: #333;
+}
+
+/* Hover tombol batal */
+.btn-cancel:hover {
+    /* gradient lebih gelap */
+    background: linear-gradient(135deg, #999, #777);
+    /* geser sedikit ke atas */
+    transform: translateY(-2px);
+    /* bayangan lebih tebal */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Tombol Hapus */
+.btn-confirm {
+    /* gradient oranye-merah */
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    /* teks putih */
+    color: #fff;
+}
+
+/* Hover tombol hapus */
+.btn-confirm:hover {
+    /* gradient lebih gelap */
+    background: linear-gradient(135deg, #ff3b3f, #f7c02b);
+    /* efek transform & zoom */
+    transform: translateY(-2px) scale(1.05);
+    /* bayangan lebih besar */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Animasi klik tombol */
+.btn:active {
+    /* tombol ditekan */
+    transform: translateY(1px) scale(0.98);
+    /* bayangan mengecil */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close icon */
+.close {
+    /* posisi kanan atas modal */
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    /* ukuran font */
+    font-size: 24px;
+    /* cursor pointer */
+    cursor: pointer;
+    /* warna ikon */
+    color: #333;
+    /* lebih terang */
+}
