@@ -16,5 +16,6 @@ try {
 } catch (PDOException $e) {
     // JANGAN echo di production
     error_log($e->getMessage());
+    echo "DB LOADED";
     exit;
 }
