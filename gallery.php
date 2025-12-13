@@ -1,5 +1,5 @@
 <?php
-include 'config/database.php'; // Memanggil file koneksi database PDO
+require_once __DIR__ . '/../config/database.php';
 ?>
 <!DOCTYPE html>
 <html lang="id">

@@ -1,5 +1,5 @@
 <?php
-include 'config/database.php'; // Memanggil koneksi database PDO
+require_once __DIR__ . '/../config/database.php';
 
 // ===== Proses kirim pesan =====
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
