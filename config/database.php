@@ -13,7 +13,8 @@ try {
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_TIMEOUT => 5
     ]);
-
 } catch (PDOException $e) {
-    die("Database error");
+    // JANGAN echo di production
+    error_log($e->getMessage());
+    exit;
 }

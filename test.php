@@ -1,3 +1,3 @@
 <?php
-require_once __DIR__ . '/../config/database.php';
-echo "DB OK";
+require_once __DIR__ . '/config/database.php';
+echo "DB CONNECTED";
