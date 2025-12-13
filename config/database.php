@@ -1,10 +1,10 @@
 <?php
 
-$host = getenv("DB_HOST");
-$port = getenv("DB_PORT");
-$dbname = getenv("DB_NAME");
-$username = getenv("DB_USER");
-$password = getenv("DB_PASS");
+$host = getenv("MYSQLHOST");
+$port = getenv("MYSQLPORT");
+$dbname = getenv("MYSQLDATABASE");
+$username = getenv("MYSQLUSER");
+$password = getenv("MYSQLPASSWORD");
 
 try {
     $options = [
